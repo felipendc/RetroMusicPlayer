@@ -30,6 +30,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import code.name.monkey.appthemehelper.util.ColorUtil
 import code.name.monkey.appthemehelper.util.VersionUtils
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import code.name.monkey.retromusic.databinding.FragmentFullPlayerControlsBinding
 import code.name.monkey.retromusic.db.PlaylistEntity
 import code.name.monkey.retromusic.db.toSongEntity
@@ -97,6 +98,18 @@ class FullPlaybackControlsFragment :
         }
         binding.text.setOnClickListener {
             goToArtist(requireActivity())
+        }
+
+        // Init the StateFlow listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
         }
     }
 
@@ -266,8 +279,8 @@ class FullPlaybackControlsFragment :
         toggleFavorite(MusicPlayerRemote.currentSong)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        _binding = null
+//    }
 }

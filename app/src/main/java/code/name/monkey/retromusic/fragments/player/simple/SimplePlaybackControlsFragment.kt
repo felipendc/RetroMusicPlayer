@@ -18,11 +18,13 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageButton
+import androidx.lifecycle.lifecycleScope
 import code.name.monkey.appthemehelper.util.ATHUtil
 import code.name.monkey.appthemehelper.util.ColorUtil
 import code.name.monkey.appthemehelper.util.MaterialValueHelper
 import code.name.monkey.appthemehelper.util.TintHelper
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import code.name.monkey.retromusic.databinding.FragmentSimpleControlsFragmentBinding
 import code.name.monkey.retromusic.extensions.accentColor
 import code.name.monkey.retromusic.extensions.getSongInfo
@@ -35,6 +37,7 @@ import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
+import kotlinx.coroutines.launch
 
 /**
  * @author Hemanth S (h4h13).
@@ -91,6 +94,18 @@ class SimplePlaybackControlsFragment :
         }
         binding.text.setOnClickListener {
             goToArtist(requireActivity())
+        }
+
+        // Init the StateFlow listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
         }
     }
 

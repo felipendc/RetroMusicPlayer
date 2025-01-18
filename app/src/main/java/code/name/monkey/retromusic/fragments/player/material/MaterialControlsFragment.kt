@@ -20,9 +20,11 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
 import code.name.monkey.appthemehelper.util.ATHUtil
 import code.name.monkey.appthemehelper.util.MaterialValueHelper
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import code.name.monkey.retromusic.databinding.FragmentMaterialPlaybackControlsBinding
 import code.name.monkey.retromusic.extensions.*
 import code.name.monkey.retromusic.fragments.base.AbsPlayerControlsFragment
@@ -33,6 +35,7 @@ import code.name.monkey.retromusic.helper.PlayPauseButtonOnClickHandler
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
 import com.google.android.material.slider.Slider
+import kotlinx.coroutines.launch
 
 /**
  * @author Hemanth S (h4h13).
@@ -76,6 +79,18 @@ class MaterialControlsFragment :
         }
         binding.text.setOnClickListener {
             goToArtist(requireActivity())
+        }
+
+        // Init the StateFlow listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
         }
     }
 
@@ -178,8 +193,8 @@ class MaterialControlsFragment :
 
     public override fun hide() {}
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        _binding = null
+//    }
 }

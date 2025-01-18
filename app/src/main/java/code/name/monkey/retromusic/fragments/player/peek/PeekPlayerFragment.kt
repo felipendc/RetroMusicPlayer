@@ -57,7 +57,7 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
         }
         binding.root.drawAboveSystemBarsWithPadding()
 
-        // Init the StateFlow's listener
+        // Init the StateFlow listener
         setupPlaybackSpeedListener()
     }
 
@@ -134,5 +134,10 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
     override fun onPlayingMetaChanged() {
         super.onPlayingMetaChanged()
         updateSong()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

@@ -25,9 +25,11 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.getSystemService
+import androidx.lifecycle.lifecycleScope
 import code.name.monkey.appthemehelper.util.ToolbarContentTintHelper
 import code.name.monkey.appthemehelper.util.VersionUtils
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import code.name.monkey.retromusic.databinding.FragmentTinyPlayerBinding
 import code.name.monkey.retromusic.extensions.*
 import code.name.monkey.retromusic.fragments.base.AbsPlayerFragment
@@ -42,6 +44,7 @@ import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.ViewUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
+import kotlinx.coroutines.launch
 import kotlin.math.abs
 
 class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
@@ -87,6 +90,18 @@ class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
                 color.secondaryTextColor,
                 requireActivity()
             )
+        }
+
+        // Init the StateFlow listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
         }
     }
 

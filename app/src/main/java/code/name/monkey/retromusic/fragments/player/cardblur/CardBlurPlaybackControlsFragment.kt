@@ -20,9 +20,11 @@ import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.lifecycle.lifecycleScope
 import code.name.monkey.appthemehelper.util.ColorUtil
 import code.name.monkey.appthemehelper.util.TintHelper
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import code.name.monkey.retromusic.databinding.FragmentCardBlurPlayerPlaybackControlsBinding
 import code.name.monkey.retromusic.extensions.applyColor
 import code.name.monkey.retromusic.extensions.getSongInfo
@@ -34,6 +36,7 @@ import code.name.monkey.retromusic.helper.PlayPauseButtonOnClickHandler
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
 import com.google.android.material.slider.Slider
+import kotlinx.coroutines.launch
 
 class CardBlurPlaybackControlsFragment :
     AbsPlayerControlsFragment(R.layout.fragment_card_blur_player_playback_controls) {
@@ -67,6 +70,18 @@ class CardBlurPlaybackControlsFragment :
         _binding = FragmentCardBlurPlayerPlaybackControlsBinding.bind(view)
         setUpPlayPauseFab()
         binding.progressSlider.applyColor(Color.WHITE)
+
+        // Init the StateFlow listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
+        }
     }
 
     override fun setColor(color: MediaNotificationProcessor) {

@@ -36,6 +36,7 @@ import androidx.recyclerview.widget.RecyclerView
 import code.name.monkey.appthemehelper.util.ColorUtil
 import code.name.monkey.appthemehelper.util.VersionUtils
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import code.name.monkey.retromusic.adapter.song.PlayingQueueAdapter
 import code.name.monkey.retromusic.databinding.FragmentGradientPlayerBinding
 import code.name.monkey.retromusic.extensions.*
@@ -183,6 +184,18 @@ class GradientPlayerFragment : AbsPlayerFragment(R.layout.fragment_gradient_play
             viewLifecycleOwner,
             onBackPressedCallback
         )
+
+        // Init the StateFlow listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
+        }
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -526,22 +539,22 @@ class GradientPlayerFragment : AbsPlayerFragment(R.layout.fragment_gradient_play
         linearLayoutManager.scrollToPositionWithOffset(MusicPlayerRemote.position + 1, 0)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        getQueuePanel().removeBottomSheetCallback(bottomSheetCallbackList)
-        if (recyclerViewDragDropManager != null) {
-            recyclerViewDragDropManager?.release()
-            recyclerViewDragDropManager = null
-        }
-
-        if (recyclerViewSwipeManager != null) {
-            recyclerViewSwipeManager?.release()
-            recyclerViewSwipeManager = null
-        }
-
-        WrapperAdapterUtils.releaseAll(wrappedAdapter)
-        _binding = null
-    }
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        getQueuePanel().removeBottomSheetCallback(bottomSheetCallbackList)
+//        if (recyclerViewDragDropManager != null) {
+//            recyclerViewDragDropManager?.release()
+//            recyclerViewDragDropManager = null
+//        }
+//
+//        if (recyclerViewSwipeManager != null) {
+//            recyclerViewSwipeManager?.release()
+//            recyclerViewSwipeManager = null
+//        }
+//
+//        WrapperAdapterUtils.releaseAll(wrappedAdapter)
+//        _binding = null
+//    }
 
     private fun updateQueuePosition() {
         playingQueueAdapter?.setCurrent(MusicPlayerRemote.position)
