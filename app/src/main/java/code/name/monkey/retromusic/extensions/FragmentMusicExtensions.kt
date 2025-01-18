@@ -3,6 +3,7 @@ package code.name.monkey.retromusic.extensions
 import android.webkit.MimeTypeMap
 import androidx.core.net.toUri
 import code.name.monkey.retromusic.model.Song
+import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.RetroUtil
 import org.jaudiotagger.audio.AudioFileIO
 import java.io.File
@@ -21,7 +22,8 @@ fun getSongInfo(song: Song): String {
             }
             string.append(audioHeader.bitRate).append(" kb/s").append(" • ")
             string.append(RetroUtil.frequencyCount(audioHeader.sampleRate.toInt()))
-                .append(" kHz")
+                .append(" kHz").append("  • ")
+            string.append(PreferenceUtil.playbackSpeed).append("x")
             string.toString()
         } catch (er: Exception) {
             " - "

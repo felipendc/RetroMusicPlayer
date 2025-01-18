@@ -35,12 +35,12 @@ object PreferenceUtil {
 
     val defaultCategories = listOf(
         CategoryInfo(CategoryInfo.Category.Home, true),
+        CategoryInfo(CategoryInfo.Category.Folder, true),
         CategoryInfo(CategoryInfo.Category.Songs, true),
         CategoryInfo(CategoryInfo.Category.Albums, true),
         CategoryInfo(CategoryInfo.Category.Artists, true),
-        CategoryInfo(CategoryInfo.Category.Playlists, true),
+        CategoryInfo(CategoryInfo.Category.Playlists, false),
         CategoryInfo(CategoryInfo.Category.Genres, false),
-        CategoryInfo(CategoryInfo.Category.Folder, false),
         CategoryInfo(CategoryInfo.Category.Search, false)
     )
 
@@ -81,7 +81,7 @@ object PreferenceUtil {
 
     fun getGeneralThemeValue(isSystemDark: Boolean): ThemeMode {
         val themeMode: String =
-            sharedPreferences.getStringOrDefault(GENERAL_THEME, "auto")
+            sharedPreferences.getStringOrDefault(GENERAL_THEME, "dark")
         return if (isBlackMode && isSystemDark && themeMode != "light") {
             ThemeMode.BLACK
         } else {
@@ -227,7 +227,7 @@ object PreferenceUtil {
 
     val isVolumeVisibilityMode
         get() = sharedPreferences.getBoolean(
-            TOGGLE_VOLUME, false
+            TOGGLE_VOLUME, true
         )
 
     var isInitializedBlacklist
@@ -245,13 +245,11 @@ object PreferenceUtil {
 
     val isExtraControls
         get() = sharedPreferences.getBoolean(
-            TOGGLE_ADD_CONTROLS, false
-        )
+            TOGGLE_ADD_CONTROLS, true)
 
     val isHomeBanner
         get() = sharedPreferences.getBoolean(
-            TOGGLE_HOME_BANNER, false
-        )
+            TOGGLE_HOME_BANNER, false)
     var isClassicNotification
         get() = sharedPreferences.getBoolean(CLASSIC_NOTIFICATION, false)
         set(value) = sharedPreferences.edit { putBoolean(CLASSIC_NOTIFICATION, value) }
@@ -260,14 +258,13 @@ object PreferenceUtil {
 
     val isShowWhenLockedEnabled get() = sharedPreferences.getBoolean(SHOW_WHEN_LOCKED, false)
 
-    val isSongInfo get() = sharedPreferences.getBoolean(EXTRA_SONG_INFO, false)
+    val isSongInfo get() = sharedPreferences.getBoolean(EXTRA_SONG_INFO, true)
 
     val isPauseOnZeroVolume get() = sharedPreferences.getBoolean(PAUSE_ON_ZERO_VOLUME, false)
 
     var isSleepTimerFinishMusic
         get() = sharedPreferences.getBoolean(
-            SLEEP_TIMER_FINISH_SONG, false
-        )
+            SLEEP_TIMER_FINISH_SONG, false)
         set(value) = sharedPreferences.edit {
             putBoolean(SLEEP_TIMER_FINISH_SONG, value)
         }
@@ -587,13 +584,13 @@ object PreferenceUtil {
 
     var nowPlayingScreen: NowPlayingScreen
         get() {
-            val id: Int = sharedPreferences.getInt(NOW_PLAYING_SCREEN_ID, 0)
+            val id: Int = sharedPreferences.getInt(NOW_PLAYING_SCREEN_ID, 14)
             for (nowPlayingScreen in NowPlayingScreen.values()) {
                 if (nowPlayingScreen.id == id) {
                     return nowPlayingScreen
                 }
             }
-            return NowPlayingScreen.Adaptive
+            return NowPlayingScreen.Peek
         }
         set(value) = sharedPreferences.edit {
             putInt(NOW_PLAYING_SCREEN_ID, value.id)
@@ -683,7 +680,7 @@ object PreferenceUtil {
         set(value) = sharedPreferences.edit { putBoolean(SHOW_LYRICS, value) }
 
     val rememberLastTab: Boolean
-        get() = sharedPreferences.getBoolean(REMEMBER_LAST_TAB, true)
+        get() = sharedPreferences.getBoolean(REMEMBER_LAST_TAB, false)
 
     val enableSearchPlaylist: Boolean
         get() = sharedPreferences.getBoolean(ENABLE_SEARCH_PLAYLIST, true)
@@ -745,7 +742,7 @@ object PreferenceUtil {
         get() = sharedPreferences.getBoolean(SCREEN_ON_LYRICS, false)
 
     val circlePlayButton
-        get() = sharedPreferences.getBoolean(CIRCLE_PLAY_BUTTON, false)
+        get() = sharedPreferences.getBoolean(CIRCLE_PLAY_BUTTON, true)
 
     val swipeAnywhereToChangeSong
         get() = sharedPreferences.getBoolean(SWIPE_ANYWHERE_NOW_PLAYING, true)

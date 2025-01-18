@@ -10,20 +10,46 @@ import code.name.monkey.retromusic.extensions.colorButtons
 import code.name.monkey.retromusic.extensions.materialDialog
 import code.name.monkey.retromusic.util.PreferenceUtil
 import com.google.android.material.slider.Slider
-
+import java.text.DecimalFormat
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 class PlaybackSpeedDialog : DialogFragment() {
 
+    private val _floatObserver = PlaybackPeedSliderObservableSingleton
+
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+
         val binding = DialogPlaybackSpeedBinding.inflate(layoutInflater)
         binding.playbackSpeedSlider.accent()
         binding.playbackPitchSlider.accent()
         PreferenceUtil.playbackSpeed.toString().also { binding.speedValue.text = it }
         PreferenceUtil.playbackPitch.toString().also { binding.pitchValue.text = it }
+
         binding.playbackSpeedSlider.addOnChangeListener(Slider.OnChangeListener { _, value, _ ->
-            binding.speedValue.text = "$value"
+            // Format as a float with 2 decimal places
+            // If the decimal part is "00", format it to 1 decimal place
+            // Otherwise, use the 2 decimal places format
+            val formattedSpeedValue = DecimalFormat("#.##").format(value)
+            if (formattedSpeedValue.split(".").getOrElse(1) { "00" } == "00") {
+                binding.speedValue.text = DecimalFormat("#.0#").format(value)
+                PreferenceUtil.playbackSpeed = DecimalFormat("#.0#").format(value).toFloat()
+            } else {
+                binding.speedValue.text = formattedSpeedValue
+                PreferenceUtil.playbackSpeed = formattedSpeedValue.toFloat()
+            }
+            _floatObserver.updateValue(value)
         })
         binding.playbackPitchSlider.addOnChangeListener(Slider.OnChangeListener { _, value, _ ->
-            binding.pitchValue.text = "$value"
+            // Format as a float with 2 decimal places
+            // If the decimal part is "00", format it to 1 decimal place
+            // Otherwise, use the 2 decimal places format
+            val formattedPitchValue = DecimalFormat("#.##").format(value)
+            if (formattedPitchValue.split(".").getOrElse(1) { "00" } == "00") {
+                binding.pitchValue.text = DecimalFormat("#.0#").format(value)
+                PreferenceUtil.playbackPitch = DecimalFormat("#.0#").format(value).toFloat()
+            } else {
+                binding.pitchValue.text = formattedPitchValue
+                PreferenceUtil.playbackPitch = formattedPitchValue.toFloat()
+            }
         })
         binding.playbackSpeedSlider.value = PreferenceUtil.playbackSpeed
         binding.playbackPitchSlider.value = PreferenceUtil.playbackPitch
@@ -41,6 +67,7 @@ class PlaybackSpeedDialog : DialogFragment() {
                     1F,
                     1F
                 )
+                _floatObserver.updateValue(1F)
             }
             .setView(binding.root)
             .create()

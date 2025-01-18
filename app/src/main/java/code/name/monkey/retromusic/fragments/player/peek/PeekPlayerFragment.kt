@@ -28,6 +28,9 @@ import code.name.monkey.retromusic.fragments.player.PlayerAlbumCoverFragment
 import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
+import androidx.lifecycle.lifecycleScope
+import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
+import kotlinx.coroutines.launch
 
 /**
  * Created by hemanths on 2019-10-03.
@@ -39,7 +42,6 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
     private var lastColor: Int = 0
     private var _binding: FragmentPeekPlayerBinding? = null
     private val binding get() = _binding!!
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -54,6 +56,18 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
             goToArtist(requireActivity())
         }
         binding.root.drawAboveSystemBarsWithPadding()
+
+        // Init the StateFlow's listener
+        setupPlaybackSpeedListener()
+    }
+
+    private fun setupPlaybackSpeedListener() {
+        val floatObserver = PlaybackPeedSliderObservableSingleton
+        viewLifecycleOwner.lifecycleScope.launch {
+            floatObserver.floatValue.collect { _ ->
+                updateSong()
+            }
+        }
     }
 
     private fun setUpSubFragments() {
@@ -82,11 +96,9 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
         return binding.playerToolbar
     }
 
-    override fun onShow() {
-    }
+    override fun onShow() {}
 
-    override fun onHide() {
-    }
+    override fun onHide() {}
 
     override fun toolbarIconColor() = colorControlNormal()
 
@@ -99,10 +111,9 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
         controlsFragment.setColor(color)
     }
 
-    override fun onFavoriteToggled() {
-    }
+    override fun onFavoriteToggled() {}
 
-    private fun updateSong() {
+    fun updateSong() {
         val song = MusicPlayerRemote.currentSong
         binding.title.text = song.title
         binding.text.text = song.artistName
@@ -123,10 +134,5 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
     override fun onPlayingMetaChanged() {
         super.onPlayingMetaChanged()
         updateSong()
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

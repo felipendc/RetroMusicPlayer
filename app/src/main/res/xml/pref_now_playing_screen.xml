@@ -9,7 +9,7 @@
         app:icon="@drawable/ic_play_circle_filled" />
 
     <code.name.monkey.appthemehelper.common.prefs.supportv7.ATESwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="extra_song_info"
         android:layout="@layout/list_item_view_switch"
         android:summary="@string/pref_summary_extra_song_info"
@@ -37,7 +37,7 @@
         android:title="@string/pref_title_lyrics_screen_on" />
 
     <code.name.monkey.appthemehelper.common.prefs.supportv7.ATESwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="circle_play_button"
         android:layout="@layout/list_item_view_switch_no_title"
         android:title="@string/pref_title_circle_button" />
@@ -89,7 +89,7 @@
 
         <code.name.monkey.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:layout="@layout/list_item_view_switch"
-            app:defaultValue="false"
+            app:defaultValue="true"
             app:icon="@drawable/ic_play_arrow"
             app:key="toggle_add_controls"
             app:summary="@string/pref_summary_extra_controls"
@@ -97,7 +97,7 @@
 
         <code.name.monkey.appthemehelper.common.prefs.supportv7.ATESwitchPreference
             android:layout="@layout/list_item_view_switch"
-            app:defaultValue="false"
+            app:defaultValue="true"
             app:icon="@drawable/ic_volume_up"
             app:key="toggle_volume"
             app:summary="@string/pref_summary_toggle_volume"

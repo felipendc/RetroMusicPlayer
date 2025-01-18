@@ -333,8 +333,6 @@
     <string name="pref_keep_pause_on_zero_volume_title">Παύση στο μηδέν</string>
     <string name="pref_keep_screen_on_summary">Λάβετε υπόψη ότι η ενεργοποίηση αυτής της λειτουργίας ενδέχεται να επηρεάσει τη διάρκεια ζωής της μπαταρίας</string>
     <string name="pref_keep_screen_on_title">Διατηρήστε την οθόνη ενεργή</string>
-    <string name="pref_show_when_locked_summary">Requires an app restart to take effect. The player must be on foreground before locking for this feature to work</string>
-    <string name="pref_show_when_locked_title">Show the player interface when locked</string>
     <string name="pref_language_name">Επιλέξτε γλώσσα</string>
     <string name="pref_snow_fall_title">Εφέ πτώσης χιονιού</string>
     <string name="pref_summary_album_art_on_lockscreen">Χρησιμοποιεί το εξώφυλλο του τρέχοντος κομματιού ως φόντο οθόνης κλειδώματος</string>
@@ -508,8 +506,6 @@
     <string name="sort_order_num_songs">Αριθμός τραγουδιών</string>
     <string name="sort_order_num_songs_desc">Αριθμός τραγουδιών φθίνουσα</string>
     <string name="sort_order_year">Έτος</string>
-    <string name="sort_order_year_asc">Year ascending</string>
-    <string name="sort_order_year_desc">Year descending</string>
     <string name="sort_order_z_a">Φθίνουσα</string>
     <string name="speech_not_supported">Ωπ! Η συσκευή σου δεν υποστηρίζει εισαγωγή φωνής</string>
     <string name="speech_prompt">Αναζήτηση στη βιβλιοθήκη σας</string>

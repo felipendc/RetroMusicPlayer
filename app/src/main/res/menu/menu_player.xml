@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+        android:id="@+id/action_set_playback_speed"
+       android:icon="@drawable/set_playback_speed"
+        android:orderInCategory="0"
+        android:title="Set Playback Speed"
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_sleep_timer"
         android:icon="@drawable/ic_sleep_timer"
@@ -27,12 +33,12 @@
         android:orderInCategory="3"
         android:title="@string/now_playing_queue"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/action_playback_speed"
-        android:icon="@drawable/ic_playback_speed"
-        android:orderInCategory="4"
-        android:title="@string/playback_speed"
-        android:visible="@bool/isMarshmallow"/>
+<!--    <item-->
+<!--        android:id="@+id/action_playback_speed"-->
+<!--        android:icon="@drawable/ic_playback_speed"-->
+<!--        android:orderInCategory="4"-->
+<!--        android:title="@string/playback_speed"-->
+<!--        android:visible="@bool/isMarshmallow"/>-->
     <item
         android:id="@+id/action_go_to_drive_mode"
         android:icon="@drawable/ic_car"

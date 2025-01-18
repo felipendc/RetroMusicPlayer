@@ -84,10 +84,14 @@ abstract class AbsPlayerFragment(@LayoutRes layout: Int) : AbsMusicServiceFragme
     ): Boolean {
         val song = MusicPlayerRemote.currentSong
         when (item.itemId) {
-            R.id.action_playback_speed -> {
+            R.id.action_set_playback_speed -> {
                 PlaybackSpeedDialog.newInstance().show(childFragmentManager, "PLAYBACK_SETTINGS")
                 return true
             }
+//            R.id.action_playback_speed -> {
+//                PlaybackSpeedDialog.newInstance().show(childFragmentManager, "PLAYBACK_SETTINGS")
+//                return true
+//            }
 
             R.id.action_toggle_lyrics -> {
                 PreferenceUtil.showLyrics = !PreferenceUtil.showLyrics

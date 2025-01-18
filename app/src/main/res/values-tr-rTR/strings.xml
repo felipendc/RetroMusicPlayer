@@ -333,8 +333,6 @@
     <string name="pref_keep_pause_on_zero_volume_title">Sıfırda dur</string>
     <string name="pref_keep_screen_on_summary">Bu özelliği etkinleştirmenin pil ömrünü etkileyebileceğini unutmayın.</string>
     <string name="pref_keep_screen_on_title">Ekranı açık tut</string>
-    <string name="pref_show_when_locked_summary">Requires an app restart to take effect. The player must be on foreground before locking for this feature to work</string>
-    <string name="pref_show_when_locked_title">Show the player interface when locked</string>
     <string name="pref_language_name">Dil seçiniz</string>
     <string name="pref_snow_fall_title">Kar yağışı efekti</string>
     <string name="pref_summary_album_art_on_lockscreen">Çalmakta olan şarkı albüm kapağını kilit ekranı duvar kağıdı olarak kullanın</string>
@@ -508,8 +506,6 @@
     <string name="sort_order_num_songs">Şarkı sayısı</string>
     <string name="sort_order_num_songs_desc">Şarkı sayısı açıklaması</string>
     <string name="sort_order_year">Yıl</string>
-    <string name="sort_order_year_asc">Year ascending</string>
-    <string name="sort_order_year_desc">Year descending</string>
     <string name="sort_order_z_a">Azalan</string>
     <string name="speech_not_supported">Üzgünüz, ancak cihazın konuşma girişini desteklemiyor.</string>
     <string name="speech_prompt">Kütüphanenizde arayın</string>
