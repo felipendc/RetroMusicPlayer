@@ -197,7 +197,7 @@ class ClassicPlayerFragment : AbsPlayerFragment(R.layout.fragment_classic_player
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -242,6 +242,17 @@ class ClassicPlayerFragment : AbsPlayerFragment(R.layout.fragment_classic_player
         val song = MusicPlayerRemote.currentSong
         binding.title.text = song.title
         binding.text.text = song.artistName
+
+        if (PreferenceUtil.isSongInfo) {
+            binding.playerControlsContainer.songInfo.text = getSongInfo(song)
+            binding.playerControlsContainer.songInfo.show()
+        } else {
+            binding.playerControlsContainer.songInfo.hide()
+        }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
 
         if (PreferenceUtil.isSongInfo) {
             binding.playerControlsContainer.songInfo.text = getSongInfo(song)

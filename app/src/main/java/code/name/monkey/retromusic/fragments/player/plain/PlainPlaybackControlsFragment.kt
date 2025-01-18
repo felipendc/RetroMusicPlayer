@@ -99,6 +99,17 @@ class PlainPlaybackControlsFragment :
         }
     }
 
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
+
+        if (PreferenceUtil.isSongInfo) {
+            binding.songInfo.text = getSongInfo(song)
+            binding.songInfo.show()
+        } else {
+            binding.songInfo.hide()
+        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentPlainControlsFragmentBinding.bind(view)
@@ -112,7 +123,7 @@ class PlainPlaybackControlsFragment :
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }

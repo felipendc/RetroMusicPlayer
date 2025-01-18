@@ -108,7 +108,7 @@ class FullPlaybackControlsFragment :
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -164,6 +164,17 @@ class FullPlaybackControlsFragment :
         binding.title.text = song.title
         binding.text.text = song.artistName
         updateIsFavorite()
+        if (PreferenceUtil.isSongInfo) {
+            binding.songInfo.text = getSongInfo(song)
+            binding.songInfo.show()
+        } else {
+            binding.songInfo.hide()
+        }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
+
         if (PreferenceUtil.isSongInfo) {
             binding.songInfo.text = getSongInfo(song)
             binding.songInfo.show()

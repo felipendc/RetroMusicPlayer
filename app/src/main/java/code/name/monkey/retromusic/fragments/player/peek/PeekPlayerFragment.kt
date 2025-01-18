@@ -65,7 +65,7 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -117,6 +117,17 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
         val song = MusicPlayerRemote.currentSong
         binding.title.text = song.title
         binding.text.text = song.artistName
+
+        if (PreferenceUtil.isSongInfo) {
+            binding.songInfo.text = getSongInfo(song)
+            binding.songInfo.show()
+        } else {
+            binding.songInfo.hide()
+        }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
 
         if (PreferenceUtil.isSongInfo) {
             binding.songInfo.text = getSongInfo(song)

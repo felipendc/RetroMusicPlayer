@@ -107,7 +107,7 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -264,6 +264,17 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
                 it.crossfadeListener()
                     .into(binding.albumCover)
             }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
+
+        if (PreferenceUtil.isSongInfo) {
+            binding.songInfo.text = getSongInfo(song)
+            binding.songInfo.show()
+        } else {
+            binding.songInfo.hide()
+        }
     }
 
     private fun updatePlayPauseDrawableState() {

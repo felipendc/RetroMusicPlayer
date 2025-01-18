@@ -193,7 +193,7 @@ class GradientPlayerFragment : AbsPlayerFragment(R.layout.fragment_gradient_play
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -371,6 +371,17 @@ class GradientPlayerFragment : AbsPlayerFragment(R.layout.fragment_gradient_play
         binding.playbackControlsFragment.title.text = song.title
         binding.playbackControlsFragment.text.text = song.artistName
         updateLabel()
+        if (PreferenceUtil.isSongInfo) {
+            binding.playbackControlsFragment.songInfo.text = getSongInfo(song)
+            binding.playbackControlsFragment.songInfo.show()
+        } else {
+            binding.playbackControlsFragment.songInfo.hide()
+        }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
+
         if (PreferenceUtil.isSongInfo) {
             binding.playbackControlsFragment.songInfo.text = getSongInfo(song)
             binding.playbackControlsFragment.songInfo.show()

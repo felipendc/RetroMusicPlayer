@@ -86,7 +86,7 @@ class CardPlaybackControlsFragment :
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -98,6 +98,17 @@ class CardPlaybackControlsFragment :
 
         if (PreferenceUtil.isSongInfo) {
             binding.songInfo.text = getSongInfo(MusicPlayerRemote.currentSong)
+            binding.songInfo.show()
+        } else {
+            binding.songInfo.hide()
+        }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
+
+        if (PreferenceUtil.isSongInfo) {
+            binding.songInfo.text = getSongInfo(song)
             binding.songInfo.show()
         } else {
             binding.songInfo.hide()

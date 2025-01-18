@@ -88,7 +88,7 @@ class BlurPlaybackControlsFragment :
         val floatObserver = PlaybackPeedSliderObservableSingleton
         viewLifecycleOwner.lifecycleScope.launch {
             floatObserver.floatValue.collect { _ ->
-                updateSong()
+                updateSongInfo()
             }
         }
     }
@@ -101,6 +101,17 @@ class BlurPlaybackControlsFragment :
         if (PreferenceUtil.isSongInfo) {
             binding.songInfo.show()
             binding.songInfo.text = getSongInfo(song)
+        } else {
+            binding.songInfo.hide()
+        }
+    }
+
+    private fun updateSongInfo() {
+        val song = MusicPlayerRemote.currentSong
+
+        if (PreferenceUtil.isSongInfo) {
+            binding.songInfo.text = getSongInfo(song)
+            binding.songInfo.show()
         } else {
             binding.songInfo.hide()
         }
