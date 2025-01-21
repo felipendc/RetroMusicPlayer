@@ -70,7 +70,6 @@ class PlaybackSpeedDialog : DialogFragment() {
                     1F,
                     1F
                 )
-                _floatObserver.updateValue(1F)
             }
             .setView(binding.root)
             .create()
@@ -80,6 +79,7 @@ class PlaybackSpeedDialog : DialogFragment() {
     private fun updatePlaybackAndPitch(speed: Float, pitch: Float) {
         PreferenceUtil.playbackSpeed = speed
         PreferenceUtil.playbackPitch = pitch
+        _floatObserver.updateValue(1F)
     }
 
     companion object {
