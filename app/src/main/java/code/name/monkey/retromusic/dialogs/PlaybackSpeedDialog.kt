@@ -17,6 +17,8 @@ class PlaybackSpeedDialog : DialogFragment() {
     private val _floatObserver = PlaybackPeedSliderObservableSingleton
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        val lastPlaybackSpeed = PreferenceUtil.playbackSpeed
+        val lastPlaybackPitch = PreferenceUtil.playbackPitch
 
         val binding = DialogPlaybackSpeedBinding.inflate(layoutInflater)
         binding.playbackSpeedSlider.accent()
@@ -55,13 +57,14 @@ class PlaybackSpeedDialog : DialogFragment() {
         binding.playbackPitchSlider.value = PreferenceUtil.playbackPitch
 
         return materialDialog(R.string.playback_settings)
-            .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton(R.string.save) { _, _ ->
-                updatePlaybackAndPitch(
-                    binding.playbackSpeedSlider.value,
-                    binding.playbackPitchSlider.value
-                )
+            .setNegativeButton(android.R.string.cancel) { _, _ ->
+                PreferenceUtil.playbackSpeed = lastPlaybackSpeed
+                PreferenceUtil.playbackPitch = lastPlaybackPitch
+                binding.playbackSpeedSlider.value = lastPlaybackSpeed
+                binding.playbackPitchSlider.value = lastPlaybackPitch
+                _floatObserver.updateValue(lastPlaybackSpeed)
             }
+            .setPositiveButton(R.string.save, null)
             .setNeutralButton(R.string.reset_action) {_, _ ->
                 updatePlaybackAndPitch(
                     1F,
