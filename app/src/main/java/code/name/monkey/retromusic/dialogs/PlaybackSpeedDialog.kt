@@ -38,7 +38,8 @@ class PlaybackSpeedDialog : DialogFragment() {
             } else {
                 formattedSpeedValue
             }
-            binding.speedValue.text = finalSpeedValue
+            val string: StringBuilder = StringBuilder()
+            binding.speedValue.text = string.append(finalSpeedValue).append("x").toString()
             PreferenceUtil.playbackSpeed = finalSpeedValue.toFloat()
             _floatObserver.updateValue(value)
         })
@@ -52,7 +53,8 @@ class PlaybackSpeedDialog : DialogFragment() {
             } else {
                 formattedPitchValue
             }
-            binding.pitchValue.text = finalPitchValue
+            val string: StringBuilder = StringBuilder()
+            binding.pitchValue.text = string.append(finalPitchValue).append("x").toString()
             PreferenceUtil.playbackPitch = finalPitchValue.toFloat()
         })
         binding.playbackSpeedSlider.value = PreferenceUtil.playbackSpeed
