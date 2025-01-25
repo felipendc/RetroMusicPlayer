@@ -32,11 +32,13 @@ import androidx.lifecycle.lifecycleScope
 import code.name.monkey.retromusic.Singletons.PlaybackPeedSliderObservableSingleton
 import kotlinx.coroutines.launch
 
+
 /**
  * Created by hemanths on 2019-10-03.
  */
 
 class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
+
 
     private lateinit var controlsFragment: PeekPlayerControlFragment
     private var lastColor: Int = 0
@@ -52,6 +54,7 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
         binding.title.setOnClickListener {
             goToAlbum(requireActivity())
         }
+        binding.text.isSelected = true
         binding.text.setOnClickListener {
             goToArtist(requireActivity())
         }
@@ -116,7 +119,7 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
     fun updateSong() {
         val song = MusicPlayerRemote.currentSong
         binding.title.text = song.title
-        binding.text.text = song.artistName
+        binding.text.text = getSongPath()
 
         if (PreferenceUtil.isSongInfo) {
             binding.songInfo.text = getSongInfo(song)
@@ -128,7 +131,6 @@ class PeekPlayerFragment : AbsPlayerFragment(R.layout.fragment_peek_player) {
 
     private fun updateSongInfo() {
         val song = MusicPlayerRemote.currentSong
-
         if (PreferenceUtil.isSongInfo) {
             binding.songInfo.text = getSongInfo(song)
             binding.songInfo.show()
