@@ -1,14 +1,10 @@
-<!--
+
 <p align="center">
   <a href="https://retromusic.app">
     <img src="app\src\main\ic_launcher-web.png" height="128">
     <h1 align="center">Retro Music Player 🎵</h1>
   </a>
 </p>
--->
-
-## This repository is just a fork of the original Retro Music project 
-- You can find the original repositoy [here](https://github.com/RetroMusicPlayer/RetroMusicPlayer)
 
 </br>
 
