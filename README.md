@@ -10,14 +10,35 @@
 
 ![](https://github.com/felipendc/RetroMusicPlayer/blob/personal_dev/screenshots/demo/1.png)
 
+ <br />
+
+ ### Vicyos Music app related links:
+ - Download the Vicyos Music Apk: `Soon...`
+
+ <br />
+ 
+
+### This project is currently compatible with:
+
+#### Android Studio:
+- Android Studio Ladybug Feature Drop | `2024.2.2 Patch 1 February 13, 2025`
+- ChromeOS: `android-studio-2024.2.2.14-cros.deb (1.0 GB)`
+- Mac (Apple Silicon): `android-studio-2024.2.2.14-mac_arm.dmg (1.3 GB)`
+- Mac (Intel): `android-studio-2024.2.2.14-mac.dmg (1.3 GB)`
+- Windows (64-bit): `android-studio-2024.2.2.14-windows.exe (1.2 GB)`
+- LINK: https://developer.android.com/studio/archive
+
 </br>
 
-## This repository is just a fork o the original Retro Music project 
-- You can find the original repositoy [here](https://github.com/RetroMusicPlayer/RetroMusicPlayer)
+### This repository is just a fork o the original Retro Music project 
+- You can find the original repository [here](https://github.com/RetroMusicPlayer/RetroMusicPlayer)
 
 </br>
 
-## 🎨 My personal modification (Felipe Ndc Edition)
+<!-- ___ -->
+
+
+### 🎨 My personal modification (Felipe Ndc Edition)
 - Peek player is the default player theme
 - Set the Album and Artists Grid size to 3 and Grid style to Normal
 - Replaced the album info with the current song folder on Peek player
@@ -29,7 +50,7 @@
 
 </br>
 
-## 📦 Included Features
+### 📦 Included Features
 -  Base 3 themes (Clearly White, Kinda Dark and Just Black)
 -  Chromecast support
 -  Choose from 10+ now playing themes
@@ -61,10 +82,9 @@
 
 We are trying our best to bring you the best user experience. The app is regularly updated for bug fixes and new features.
 
-___
+</br>
 
-
-## 🗂️ License
+### 🗂️ License
 
 Retro Music Player is released under the GNU General Public License v3.0
 (GPLv3), which can be found [here](LICENSE.md)
