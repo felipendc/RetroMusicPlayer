@@ -24,7 +24,7 @@
 - Appended "x" to the values of the Playback Settings sliders.
 - Added tje current playback speed to the Peek player
 - Fixed  issue with Playback Settings screen crashing on Android 14
-- Added "/0/Android" to the default blacklist folders for privacy matters
+- Added "/0/Android/" to the default blacklist folders for privacy matters
 - Added folder destination to the navigation bar
 
 </br>
