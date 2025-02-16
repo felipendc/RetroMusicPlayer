@@ -7,7 +7,7 @@
 </p>
 -->
 
-## This repository is just a fork o the original Retro Music project 
+## This repository is just a fork of the original Retro Music project 
 - You can find the original repositoy [here](https://github.com/RetroMusicPlayer/RetroMusicPlayer)
 
 </br>
