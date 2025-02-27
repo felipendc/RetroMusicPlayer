@@ -43,7 +43,7 @@
 - Set the Album and Artists Grid size to 3 and Grid style to Normal
 - Replaced the album info with the current song folder on Peek player
 - Appended "x" to the values of the Playback Settings sliders.
-- Added tje current playback speed to the Peek player
+- Added the current playback speed to the Peek player
 - Fixed  issue with Playback Settings screen crashing on Android 14
 - Added "/0/Android/" to the default blacklist folders for privacy matters
 - Added folder destination to the navigation bar
