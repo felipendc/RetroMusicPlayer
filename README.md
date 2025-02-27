@@ -21,11 +21,11 @@
 ### This project is currently compatible with:
 
 #### Android Studio:
-- Android Studio Ladybug Feature Drop | `2024.2.2 RC 2 December 16, 2024`
-- ChromeOS: `android-studio-2024.2.2.12-cros.deb (1.0 GB)`
-- Mac (Apple Silicon): `android-studio-2024.2.2.12-mac_arm.dmg (1.3 GB)`
-- Mac (Intel): `android-studio-2024.2.2.12-mac.dmg (1.3 GB)`
-- Windows (64-bit): `android-studio-2024.2.2.12-windows.exe (1.2 GB)`
+- Android Studio Meerkat | `2024.3.1 RC 2 February 18, 2025`
+- ChromeOS: `android-studio-2024.3.1.12-cros.deb (1.1 GB)`
+- Mac (Apple Silicon): `android-studio-2024.3.1.12-mac_arm.dmg (1.3 GB)`
+- Mac (Intel): `android-studio-2024.3.1.12-mac.dmg (1.4 GB)`
+- Windows (64-bit): `android-studio-2024.3.1.12-windows.exe (1.3 GB)`
 - LINK: https://developer.android.com/studio/archive
 
 </br>
