@@ -560,7 +560,8 @@ class FoldersFragment : AbsMainActivityFragment(R.layout.fragment_folder),
     ) {
         val songs = try {
             val fileList = FileUtil.listFilesDeep(files, fileFilter)
-            Collections.sort(fileList, fileComparator)
+                .filter { it.length() > 0 } // 🔹 Remove files with 0 KB
+                .sortedWith(fileComparator) // 🔹 Using sortedWith instead of Collections.sort
             FileUtil.matchFilesWithMediaStore(context, fileList)
         } catch (e: Exception) {
             e.printStackTrace()
