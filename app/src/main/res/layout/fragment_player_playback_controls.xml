@@ -136,13 +136,8 @@
         android:id="@+id/playPauseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< Updated upstream
         android:layout_marginTop="48dp"
         android:layout_marginBottom="24dp"
-=======
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="28dp"
->>>>>>> Stashed changes
         android:background="?attr/roundSelector"
         app:fabSize="normal"
         app:layout_constraintBottom_toTopOf="@+id/volumeFragmentContainer"
@@ -150,10 +145,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/previousButton"
         app:layout_constraintTop_toBottomOf="@+id/text"
-<<<<<<< Updated upstream
         app:layout_constraintVertical_bias="0.455"
-=======
->>>>>>> Stashed changes
         app:maxImageSize="32dp"
         app:srcCompat="@drawable/ic_pause"
         tools:tint="@color/md_black_1000" />
@@ -192,10 +184,6 @@
         android:id="@+id/songInfo"
         android:layout_width="wrap_content"
         android:layout_height="26dp"
-<<<<<<< Updated upstream
-=======
-        android:layout_marginBottom="10dp"
->>>>>>> Stashed changes
         android:ellipsize="end"
         android:maxLines="2"
         android:paddingHorizontal="16dp"
