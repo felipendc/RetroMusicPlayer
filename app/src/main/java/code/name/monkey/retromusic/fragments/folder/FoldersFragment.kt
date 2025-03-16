@@ -612,18 +612,11 @@ class FoldersFragment : AbsMainActivityFragment(R.layout.fragment_folder),
         val AUDIO_FILE_FILTER = FileFilter { file: File ->
             (!file.isHidden
                     && (file.isDirectory
-                    || FileUtil.fileIsMimeType(file, "audio/*", MimeTypeMap.getSingleton())
-                    || FileUtil.fileIsMimeType(
-                file,
-                "application/opus",
-                MimeTypeMap.getSingleton()
-            )
-                    || FileUtil.fileIsMimeType(
-                file,
-                "application/ogg",
-                MimeTypeMap.getSingleton()
-            )))
+                    || (file.length() > 0 && FileUtil.fileIsMimeType(file, "audio/*", MimeTypeMap.getSingleton()))
+                    || (file.length() > 0 && FileUtil.fileIsMimeType(file, "application/opus", MimeTypeMap.getSingleton()))
+                    || (file.length() > 0 && FileUtil.fileIsMimeType(file, "application/ogg", MimeTypeMap.getSingleton()))))
         }
+
         private const val CRUMBS = "crumbs"
         private const val LOADER_ID = 5
 
