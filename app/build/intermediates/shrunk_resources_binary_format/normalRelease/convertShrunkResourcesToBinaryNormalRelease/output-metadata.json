@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "SHRUNK_RESOURCES_BINARY_FORMAT",
+    "kind": "Directory"
+  },
+  "applicationId": "code.name.monkey.retromusic",
+  "variantName": "normalRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 10621,
+      "versionName": "6.2.1",
+      "outputFile": "shrunk-resources-binary-format-normal-release.ap_"
+    }
+  ],
+  "elementType": "File"
+}

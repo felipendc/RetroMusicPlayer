@@ -1,0 +1,36 @@
+<lint-module
+    format="1"
+    dir="C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app"
+    name=":app"
+    type="APP"
+    maven="RetroMusicPlayer:app:unspecified"
+    agpVersion="8.9.0-rc02"
+    buildFolder="build"
+    bootClassPath="C:\Android_Studio\platforms\android-35\android.jar;C:\Android_Studio\build-tools\35.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="21"
+    compileTarget="android-35">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="ImpliedQuantity"
+        severity="WARNING" />
+      <severity
+        id="Instantiatable"
+        severity="WARNING" />
+      <severity
+        id="MissingQuantity"
+        severity="WARNING" />
+      <severity
+        id="MissingTranslation"
+        severity="WARNING" />
+      <severity
+        id="StringFormatInvalid"
+        severity="WARNING" />
+    </severities>
+  </lintOptions>
+  <variant name="normalRelease"/>
+</lint-module>

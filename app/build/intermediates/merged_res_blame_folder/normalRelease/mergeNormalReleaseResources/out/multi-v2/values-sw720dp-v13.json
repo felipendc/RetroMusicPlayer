@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "code.name.monkey.retromusic.app-mergeNormalReleaseResources-79:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Felipe Ndc\\.gradle\\caches\\8.11.1\\transforms\\6c030fb63fe940a26c4fb27f954465a3\\transformed\\mediarouter-1.6.0\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,124",
+                        "endColumns": "68,68",
+                        "endOffsets": "119,188"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "107,176",
+                        "endColumns": "68,68",
+                        "endOffsets": "171,240"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Felipe Ndc\\.gradle\\caches\\8.11.1\\transforms\\439fa19cd039fa76741048df2d7ad226\\transformed\\core-3.3.0\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

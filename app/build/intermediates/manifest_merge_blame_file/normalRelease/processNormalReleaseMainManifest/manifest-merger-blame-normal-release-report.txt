@@ -1,0 +1,944 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="code.name.monkey.retromusic"
+4    android:versionCode="10621"
+5    android:versionName="6.2.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="com.android.vending.BILLING" />
+11-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:5:5-67
+11-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:5:22-64
+12    <uses-permission
+12-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:5:5-7:38
+13        android:name="android.permission.BLUETOOTH"
+13-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:6:9-52
+14        android:maxSdkVersion="30" />
+14-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:7:9-35
+15    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+15-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:8:5-75
+15-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:8:22-72
+16    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+16-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:9:5-11:47
+16-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:10:9-63
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:12:5-66
+17-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:12:22-63
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:13:5-68
+18-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:13:22-65
+19    <uses-permission
+19-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:14:5-16:38
+20        android:name="android.permission.READ_EXTERNAL_STORAGE"
+20-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:15:9-64
+21        android:maxSdkVersion="32" />
+21-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:16:9-35
+22    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+22-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:17:5-75
+22-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:17:22-72
+23    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+23-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:18:5-77
+23-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:18:22-74
+24    <uses-permission
+24-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:19:5-21:38
+25        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+25-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:20:9-65
+26        android:maxSdkVersion="29" />
+26-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:21:9-35
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:22:5-67
+27-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:22:22-64
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:23:5-79
+28-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:23:22-76
+29    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+29-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:24:5-75
+29-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:24:22-72
+30    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+30-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:25:5-77
+30-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:25:22-74
+31    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+31-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:26:5-92
+31-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:26:22-89
+32    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+32-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:27:5-29:47
+32-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:28:9-57
+33    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+33-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:30:5-81
+33-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:30:22-78
+34    <uses-permission
+34-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:31:5-34:31
+35        android:name="android.permission.BLUETOOTH_CONNECT"
+35-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:32:9-60
+36        android:usesPermissionFlags="neverForLocation" />
+36-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:33:9-55
+37    <!--
+38    This is not that important, it's just here so that we can query equalizer package
+39    and check if it's present on A11+ because of Package visibility restrictions.
+40    -->
+41    <queries>
+41-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:341:5-343:15
+42        <package android:name="com.android.musicfx" />
+42-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:342:9-55
+42-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:342:18-52
+43        <package android:name="com.google.android.gms.policy_cast_dynamite" /> <!-- Query Camera Packages -->
+43-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:15:9-79
+43-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:15:18-76
+44        <intent>
+44-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:12:9-14:18
+45            <action android:name="android.media.action.IMAGE_CAPTURE" />
+45-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:13:13-73
+45-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:13:21-70
+46        </intent> <!-- Query Open Document -->
+47        <intent>
+47-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:16:9-18:18
+48            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+48-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:17:13-79
+48-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:17:21-76
+49        </intent>
+50        <intent>
+50-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:13:9-15:18
+51            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+51-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:14:13-91
+51-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:14:21-88
+52        </intent>
+53    </queries>
+54
+55    <permission
+55-->[androidx.core:core:1.13.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\db23211ad4d9c695ec8976e7ed32f437\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+56        android:name="code.name.monkey.retromusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+56-->[androidx.core:core:1.13.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\db23211ad4d9c695ec8976e7ed32f437\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+57        android:protectionLevel="signature" />
+57-->[androidx.core:core:1.13.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\db23211ad4d9c695ec8976e7ed32f437\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+58
+59    <uses-permission android:name="code.name.monkey.retromusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+59-->[androidx.core:core:1.13.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\db23211ad4d9c695ec8976e7ed32f437\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+59-->[androidx.core:core:1.13.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\db23211ad4d9c695ec8976e7ed32f437\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+60
+61    <application
+61-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:36:5-335:19
+62        android:name="code.name.monkey.retromusic.App"
+62-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:37:9-28
+63        android:allowBackup="@bool/allowBackup"
+63-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:38:9-48
+64        android:appCategory="audio"
+64-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:39:9-36
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.13.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\db23211ad4d9c695ec8976e7ed32f437\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+66        android:configChanges="locale|layoutDirection"
+66-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:40:9-55
+67        android:enableOnBackInvokedCallback="true"
+67-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:41:9-51
+68        android:extractNativeLibs="true"
+69        android:icon="@mipmap/ic_launcher"
+69-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:42:9-43
+70        android:label="@string/app_name"
+70-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:43:9-41
+71        android:localeConfig="@xml/locales_config"
+71-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:44:9-51
+72        android:requestLegacyExternalStorage="true"
+72-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:45:9-52
+73        android:restoreAnyVersion="true"
+73-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:46:9-41
+74        android:roundIcon="@mipmap/ic_launcher_round"
+74-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:47:9-54
+75        android:supportsRtl="true"
+75-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:48:9-35
+76        android:theme="@style/Theme.RetroMusic.FollowSystem"
+76-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:49:9-61
+77        android:usesCleartextTraffic="true" >
+77-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:50:9-44
+78        <activity android:name="code.name.monkey.retromusic.activities.PurchaseActivity" />
+78-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:8:9-65
+78-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:8:19-62
+79
+80        <meta-data
+80-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:10:9-12:36
+81            android:name="com.android.vending.splits.required"
+81-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:11:13-63
+82            android:value="true" />
+82-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:12:13-33
+83
+84        <!-- ChromeCast -->
+85        <meta-data
+85-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:15:9-17:84
+86            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+86-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:16:13-93
+87            android:value="code.name.monkey.retromusic.cast.CastOptionsProvider" />
+87-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\normal\AndroidManifest.xml:17:13-81
+88
+89        <activity
+89-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:52:9-125:20
+90            android:name="code.name.monkey.retromusic.activities.MainActivity"
+90-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:53:13-52
+91            android:exported="true"
+91-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:54:13-36
+92            android:launchMode="singleTop"
+92-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:55:13-43
+93            android:theme="@style/Theme.RetroMusic.SplashScreen" >
+93-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:56:13-65
+94            <intent-filter>
+94-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:57:13-64:29
+95                <action android:name="android.intent.action.MAIN" />
+95-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:58:17-69
+95-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:58:25-66
+96                <action android:name="android.intent.action.MUSIC_PLAYER" />
+96-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:59:17-77
+96-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:59:25-74
+97
+98                <category android:name="android.intent.category.LAUNCHER" />
+98-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:61:17-77
+98-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:61:27-74
+99                <category android:name="android.intent.category.APP_MUSIC" />
+99-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:62:17-78
+99-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:62:27-75
+100                <category android:name="android.intent.category.DEFAULT" />
+100-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+100-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+101            </intent-filter>
+102            <intent-filter>
+102-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:65:13-68:29
+103                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
+103-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:66:17-86
+103-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:66:25-83
+104
+105                <category android:name="android.intent.category.DEFAULT" />
+105-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+105-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+106            </intent-filter>
+107            <intent-filter>
+107-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:69:13-79:29
+108                <action android:name="android.intent.action.VIEW" />
+108-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:17-69
+108-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:25-66
+109
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+110-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+111
+112                <data android:scheme="content" />
+112-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+112-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:23-47
+113                <data android:mimeType="audio/*" />
+113-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+114                <data android:mimeType="application/ogg" />
+114-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+115                <data android:mimeType="application/x-ogg" />
+115-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+116                <data android:mimeType="application/itunes" />
+116-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+117            </intent-filter>
+118            <intent-filter>
+118-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:80:13-90:29
+119                <action android:name="android.intent.action.VIEW" />
+119-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:17-69
+119-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:25-66
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+121-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+122
+123                <data android:scheme="file" />
+123-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+123-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:23-47
+124                <data android:mimeType="audio/*" />
+124-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+125                <data android:mimeType="application/ogg" />
+125-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+126                <data android:mimeType="application/x-ogg" />
+126-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+127                <data android:mimeType="application/itunes" />
+127-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+128            </intent-filter>
+129            <intent-filter>
+129-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:91:13-102:29
+130                <action android:name="android.intent.action.VIEW" />
+130-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:17-69
+130-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:25-66
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+132-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+133                <category android:name="android.intent.category.BROWSABLE" />
+133-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:95:17-78
+133-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:95:27-75
+134
+135                <data android:scheme="http" />
+135-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+135-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:23-47
+136                <data android:mimeType="audio/*" />
+136-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+137                <data android:mimeType="application/ogg" />
+137-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+138                <data android:mimeType="application/x-ogg" />
+138-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+139                <data android:mimeType="application/itunes" />
+139-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+140            </intent-filter>
+141            <intent-filter>
+141-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:103:13-111:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:17-69
+142-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+144-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+145
+146                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+146-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+147                <data android:mimeType="vnd.android.cursor.dir/albums" />
+147-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+148                <data android:mimeType="vnd.android.cursor.dir/artists" />
+148-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+149            </intent-filter>
+150            <intent-filter>
+150-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:112:13-116:29
+151                <action android:name="com.cyanogenmod.eleven.AUDIO_PLAYER" />
+151-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:113:17-78
+151-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:113:25-75
+152
+153                <category android:name="android.intent.category.DEFAULT" />
+153-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+153-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+154            </intent-filter>
+155            <intent-filter>
+155-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:117:13-124:29
+156                <action android:name="android.intent.action.PICK" />
+156-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:118:17-69
+156-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:118:25-66
+157
+158                <category android:name="android.intent.category.DEFAULT" />
+158-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+158-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+159                <category android:name="android.intent.category.OPENABLE" />
+159-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:121:17-77
+159-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:121:27-74
+160
+161                <data android:mimeType="vnd.android.cursor.dir/audio" />
+161-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+162            </intent-filter>
+163        </activity>
+164        <activity android:name="code.name.monkey.retromusic.activities.tageditor.AlbumTagEditorActivity" />
+164-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:126:9-81
+164-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:126:19-78
+165        <activity android:name="code.name.monkey.retromusic.activities.tageditor.SongTagEditorActivity" />
+165-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:127:9-80
+165-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:127:19-77
+166        <activity android:name="code.name.monkey.retromusic.activities.SupportDevelopmentActivity" />
+166-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:128:9-75
+166-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:128:19-72
+167        <activity android:name="code.name.monkey.retromusic.activities.LicenseActivity" />
+167-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:129:9-64
+167-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:129:19-61
+168        <activity android:name="code.name.monkey.retromusic.activities.bugreport.BugReportActivity" />
+168-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:130:9-76
+168-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:130:19-73
+169        <activity android:name="code.name.monkey.retromusic.activities.ShareInstagramStory" />
+169-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:131:9-68
+169-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:131:19-65
+170        <activity android:name="code.name.monkey.retromusic.activities.DriveModeActivity" />
+170-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:132:9-66
+170-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:132:19-63
+171        <activity android:name="code.name.monkey.retromusic.activities.PermissionActivity" />
+171-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:133:9-67
+171-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:133:19-64
+172        <activity
+172-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:134:9-138:47
+173            android:name="code.name.monkey.retromusic.activities.LockScreenActivity"
+173-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:135:13-58
+174            android:excludeFromRecents="true"
+174-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:136:13-46
+175            android:launchMode="singleTask"
+175-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:137:13-44
+176            android:showOnLockScreen="true" />
+176-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:138:13-44
+177        <activity
+177-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:139:9-174:20
+178            android:name="code.name.monkey.retromusic.fragments.backup.RestoreActivity"
+178-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:140:13-61
+179            android:excludeFromRecents="false"
+179-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:141:13-47
+180            android:exported="true"
+180-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:142:13-36
+181            android:label="@string/restore"
+181-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:143:13-44
+182            android:theme="@style/Theme.RetroMusic.Dialog" >
+182-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:144:13-59
+183            <intent-filter>
+183-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:145:13-173:29
+184                <action android:name="android.intent.action.VIEW" />
+184-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:17-69
+184-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:70:25-66
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:17-76
+186-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:63:27-73
+187                <category android:name="android.intent.category.BROWSABLE" />
+187-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:95:17-78
+187-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:95:27-75
+188
+189                <data android:mimeType="application/octet-stream" />
+189-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+190                <data android:mimeType="application/x-zip-compressed" />
+190-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+191                <data android:mimeType="application/zip" />
+191-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+192                <data android:scheme="file" />
+192-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+192-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:23-47
+193                <data android:scheme="content" />
+193-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+193-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:23-47
+194                <data android:mimeType="*/*" />
+194-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+195                <!--
+196                    Work around Android's ugly primitive PatternMatcher
+197                    implementation that can't cope with finding a . early in
+198                    the path unless it's explicitly matched.
+199                -->
+200                <data android:host="*" />
+200-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+201                <data android:pathPattern=".*\\.rmbak" />
+201-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+202                <data android:pathPattern=".*\\..*\\.rmbak" />
+202-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+203                <data android:pathPattern=".*\\..*\\..*\\.rmbak" />
+203-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+204                <data android:pathPattern=".*\\..*\\..*\\..*\\.rmbak" />
+204-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+205                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.rmbak" />
+205-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+206                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.rmbak" />
+206-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+207                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.rmbak" />
+207-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+208                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rmbak" />
+208-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+209                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rmbak" />
+209-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:74:17-50
+210            </intent-filter>
+211        </activity>
+212        <activity
+212-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:176:9-179:75
+213            android:name="code.name.monkey.retromusic.appshortcuts.AppShortcutLauncherActivity"
+213-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:177:13-69
+214            android:launchMode="singleInstance"
+214-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:178:13-48
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:179:13-72
+216        <activity
+216-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:181:9-183:50
+217            android:name="code.name.monkey.retromusic.activities.saf.SAFGuideActivity"
+217-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:182:13-60
+218            android:theme="@style/Theme.Intro" />
+218-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:183:13-47
+219        <activity
+219-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:185:9-191:20
+220            android:name="code.name.monkey.retromusic.activities.ErrorActivity"
+220-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:186:13-53
+221            android:exported="true" >
+221-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:187:13-36
+222            <intent-filter>
+222-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:188:13-190:29
+223                <action android:name="cat.ereza.customactivityoncrash.RESTART" />
+223-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:189:17-82
+223-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:189:25-79
+224            </intent-filter>
+225        </activity>
+226
+227        <provider
+228            android:name="androidx.core.content.FileProvider"
+229            android:authorities="code.name.monkey.retromusic"
+230            android:exported="false"
+231            android:grantUriPermissions="true" >
+232            <meta-data
+232-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:36:13-38:71
+233                android:name="android.support.FILE_PROVIDER_PATHS"
+233-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:37:17-67
+234                android:resource="@xml/provider_paths" />
+234-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:38:17-68
+235        </provider>
+236
+237        <receiver
+237-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:203:9-209:20
+238            android:name="code.name.monkey.retromusic.service.MediaButtonIntentReceiver"
+238-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:204:13-62
+239            android:exported="true" >
+239-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:205:13-36
+240            <intent-filter>
+240-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:206:13-208:29
+241                <action android:name="android.intent.action.MEDIA_BUTTON" />
+241-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:207:17-77
+241-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:207:25-74
+242            </intent-filter>
+243        </receiver>
+244        <receiver
+244-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:211:9-222:20
+245            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetBig"
+245-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:212:13-52
+246            android:exported="true"
+246-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:213:13-36
+247            android:label="@string/app_widget_big_name" >
+247-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:214:13-56
+248            <intent-filter>
+248-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+249                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+249-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+249-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+250            </intent-filter>
+251
+252            <meta-data
+252-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+253                android:name="android.appwidget.provider"
+253-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+254                android:resource="@xml/app_widget_big_info" />
+254-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+255        </receiver>
+256        <receiver
+256-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:224:9-235:20
+257            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetClassic"
+257-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:225:13-56
+258            android:exported="true"
+258-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:226:13-36
+259            android:label="@string/app_widget_classic_name" >
+259-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:227:13-60
+260            <intent-filter>
+260-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+261                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+261-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+261-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+262            </intent-filter>
+263
+264            <meta-data
+264-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+265                android:name="android.appwidget.provider"
+265-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+266                android:resource="@xml/app_widget_classic_info" />
+266-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+267        </receiver>
+268        <receiver
+268-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:236:9-247:20
+269            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetSmall"
+269-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:237:13-54
+270            android:exported="true"
+270-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:238:13-36
+271            android:label="@string/app_widget_small_name" >
+271-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:239:13-58
+272            <intent-filter>
+272-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+273                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+273-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+273-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+274            </intent-filter>
+275
+276            <meta-data
+276-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+277                android:name="android.appwidget.provider"
+277-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+278                android:resource="@xml/app_widget_small_info" />
+278-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+279        </receiver>
+280        <receiver
+280-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:248:9-259:20
+281            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetText"
+281-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:249:13-53
+282            android:exported="true"
+282-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:250:13-36
+283            android:label="@string/app_widget_text_name" >
+283-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:251:13-57
+284            <intent-filter>
+284-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+285                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+285-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+285-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+286            </intent-filter>
+287
+288            <meta-data
+288-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+289                android:name="android.appwidget.provider"
+289-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+290                android:resource="@xml/app_widget_text" />
+290-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+291        </receiver>
+292        <receiver
+292-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:260:9-271:20
+293            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetCard"
+293-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:261:13-53
+294            android:exported="true"
+294-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:262:13-36
+295            android:label="@string/app_widget_card_name" >
+295-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:263:13-57
+296            <intent-filter>
+296-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+297                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+297-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+297-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+298            </intent-filter>
+299
+300            <meta-data
+300-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+301                android:name="android.appwidget.provider"
+301-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+302                android:resource="@xml/app_widget_card_info" />
+302-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+303        </receiver>
+304        <receiver
+304-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:272:9-283:20
+305            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetMD3"
+305-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:273:13-52
+306            android:exported="true"
+306-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:274:13-36
+307            android:label="@string/app_widget_md3_name" >
+307-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:275:13-56
+308            <intent-filter>
+308-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+309                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+309-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+309-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+310            </intent-filter>
+311
+312            <meta-data
+312-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+313                android:name="android.appwidget.provider"
+313-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+314                android:resource="@xml/app_widget_md3_info" />
+314-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+315        </receiver>
+316        <receiver
+316-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:284:9-295:20
+317            android:name="code.name.monkey.retromusic.appwidgets.AppWidgetCircle"
+317-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:285:13-55
+318            android:exported="true"
+318-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:286:13-36
+319            android:label="@string/app_widget_circle_name" >
+319-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:287:13-59
+320            <intent-filter>
+320-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:215:13-217:29
+321                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+321-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:17-84
+321-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:216:25-81
+322            </intent-filter>
+323
+324            <meta-data
+324-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:219:13-221:63
+325                android:name="android.appwidget.provider"
+325-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:220:17-58
+326                android:resource="@xml/app_widget_circle_info" />
+326-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:221:17-60
+327        </receiver>
+328
+329        <service
+329-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:297:9-305:19
+330            android:name="code.name.monkey.retromusic.service.MusicService"
+330-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:298:13-49
+331            android:exported="true"
+331-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:299:13-36
+332            android:foregroundServiceType="mediaPlayback"
+332-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:300:13-58
+333            android:label="@string/app_name" >
+333-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:301:13-45
+334            <intent-filter>
+334-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:302:13-304:29
+335                <action android:name="android.media.browse.MediaBrowserService" />
+335-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:303:17-83
+335-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:303:25-80
+336            </intent-filter>
+337        </service>
+338
+339        <meta-data
+339-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:307:9-309:35
+340            android:name="android.max_aspect"
+340-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:308:13-46
+341            android:value="2.1" />
+341-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:309:13-32
+342        <meta-data
+342-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:311:9-313:36
+343            android:name="com.lge.support.SPLIT_WINDOW"
+343-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:312:13-56
+344            android:value="true" /> <!-- Android Auto -->
+344-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:313:13-33
+345        <meta-data
+345-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:316:9-318:59
+346            android:name="com.google.android.gms.car.application"
+346-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:317:13-66
+347            android:resource="@xml/automotive_app_desc" />
+347-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:318:13-56
+348        <meta-data
+348-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:319:9-321:50
+349            android:name="com.google.android.gms.car.application.theme"
+349-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:320:13-72
+350            android:resource="@style/CarTheme" />
+350-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:321:13-47
+351        <meta-data
+351-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:322:9-324:60
+352            android:name="com.google.android.gms.car.notification.SmallIcon"
+352-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:323:13-77
+353            android:resource="@drawable/ic_notification" /> <!-- For auto-storage of locale on Android 12 and lower -->
+353-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:324:13-57
+354        <service
+354-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:327:9-334:19
+355            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+355-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:328:13-82
+356            android:enabled="false"
+356-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:329:13-36
+357            android:exported="false" >
+357-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:330:13-37
+358            <meta-data
+358-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:331:13-333:40
+359                android:name="autoStoreLocales"
+359-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:332:17-48
+360                android:value="true" />
+360-->C:\Users\Felipe Ndc\Desktop\RetroMusicPlayer\app\src\main\AndroidManifest.xml:333:17-37
+361        </service>
+362
+363        <receiver
+363-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:19:9-21:40
+364            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+364-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:20:13-91
+365            android:exported="false" />
+365-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:21:13-37
+366
+367        <service
+367-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:23:9-25:40
+368            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+368-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:24:13-85
+369            android:exported="false" />
+369-->[com.google.android.gms:play-services-cast-framework:21.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\339e393636db534db7311f231ca90734\transformed\play-services-cast-framework-21.3.0\AndroidManifest.xml:25:13-37
+370
+371        <activity
+371-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:22:9-25:68
+372            android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity"
+372-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:23:13-81
+373            android:screenOrientation="unspecified"
+373-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:24:13-52
+374            android:theme="@style/Theme.Transparent.ImagePicker" />
+374-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:25:13-65
+375        <activity
+375-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:26:9-29:72
+376            android:name="com.yalantis.ucrop.UCropActivity"
+376-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:27:13-60
+377            android:screenOrientation="portrait"
+377-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:28:13-49
+378            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+378-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:29:13-69
+379
+380        <provider
+380-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:31:9-39:20
+381            android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider"
+381-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:32:13-85
+382            android:authorities="code.name.monkey.retromusic.imagepicker.provider"
+382-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:33:13-72
+383            android:exported="false"
+383-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:34:13-37
+384            android:grantUriPermissions="true" >
+384-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:35:13-47
+385            <meta-data
+385-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:36:13-38:71
+386                android:name="android.support.FILE_PROVIDER_PATHS"
+386-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:37:17-67
+387                android:resource="@xml/image_picker_provider_paths" />
+387-->[com.github.dhaval2404:imagepicker:2.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f79c6ef08e5dfa561c4e31bbd2ca581f\transformed\imagepicker-2.1\AndroidManifest.xml:38:17-68
+388        </provider>
+389
+390        <activity
+390-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:10:9-12:49
+391            android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity"
+391-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:11:13-89
+392            android:process=":error_activity" />
+392-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:12:13-46
+393
+394        <provider
+394-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:14:9-18:39
+395            android:name="cat.ereza.customactivityoncrash.provider.CaocInitProvider"
+395-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:15:13-85
+396            android:authorities="code.name.monkey.retromusic.customactivityoncrashinitprovider"
+396-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:16:13-85
+397            android:exported="false"
+397-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:17:13-37
+398            android:initOrder="101" />
+398-->[cat.ereza:customactivityoncrash:2.4.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\bddbe1d92e88c6278764c582132c0ed0\transformed\customactivityoncrash-2.4.0\AndroidManifest.xml:18:13-36
+399
+400        <service
+400-->[androidx.room:room-runtime:2.6.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\28a90229472fd213512770229f378feb\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+401            android:name="androidx.room.MultiInstanceInvalidationService"
+401-->[androidx.room:room-runtime:2.6.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\28a90229472fd213512770229f378feb\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+402            android:directBootAware="true"
+402-->[androidx.room:room-runtime:2.6.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\28a90229472fd213512770229f378feb\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+403            android:exported="false" />
+403-->[androidx.room:room-runtime:2.6.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\28a90229472fd213512770229f378feb\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+404
+405        <provider
+405-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+406            android:name="androidx.startup.InitializationProvider"
+406-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+407            android:authorities="code.name.monkey.retromusic.androidx-startup"
+407-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+408            android:exported="false" >
+408-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+409            <meta-data
+409-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+410                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+410-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+411                android:value="androidx.startup" />
+411-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\87797328ca72ef3176613758e935b006\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+412            <meta-data
+412-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\50addbe932cf7b4efb4a6a249fa06c08\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+413                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+413-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\50addbe932cf7b4efb4a6a249fa06c08\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+414                android:value="androidx.startup" />
+414-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\50addbe932cf7b4efb4a6a249fa06c08\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+415            <meta-data
+415-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+416                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+416-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+417                android:value="androidx.startup" />
+417-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+418        </provider>
+419
+420        <meta-data
+420-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:19:9-21:37
+421            android:name="com.google.android.play.billingclient.version"
+421-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:20:13-73
+422            android:value="7.0.0" />
+422-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:21:13-34
+423
+424        <activity
+424-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:23:9-27:75
+425            android:name="com.android.billingclient.api.ProxyBillingActivity"
+425-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:24:13-78
+426            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+426-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:25:13-96
+427            android:exported="false"
+427-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:26:13-37
+428            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+428-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:27:13-72
+429        <activity
+429-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:28:9-32:75
+430            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+430-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:29:13-80
+431            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+431-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:30:13-96
+432            android:exported="false"
+432-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:31:13-37
+433            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+433-->[com.android.billingclient:billing:7.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\3230a62e4cdc77982646e70868873cc2\transformed\billing-7.0.0\AndroidManifest.xml:32:13-72
+434
+435        <meta-data
+435-->[com.github.bumptech.glide:okhttp3-integration:4.15.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\b3d90a7c0a48a7471fb9a1d9774cb2fa\transformed\okhttp3-integration-4.15.1\AndroidManifest.xml:10:9-12:43
+436            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+436-->[com.github.bumptech.glide:okhttp3-integration:4.15.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\b3d90a7c0a48a7471fb9a1d9774cb2fa\transformed\okhttp3-integration-4.15.1\AndroidManifest.xml:11:13-84
+437            android:value="GlideModule" />
+437-->[com.github.bumptech.glide:okhttp3-integration:4.15.1] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\b3d90a7c0a48a7471fb9a1d9774cb2fa\transformed\okhttp3-integration-4.15.1\AndroidManifest.xml:12:13-40
+438
+439        <activity
+439-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\a1c2ae98cd0c88e6d1c11ddceaae13f9\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+440            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+440-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\a1c2ae98cd0c88e6d1c11ddceaae13f9\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+441            android:exported="false"
+441-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\a1c2ae98cd0c88e6d1c11ddceaae13f9\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+442            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+442-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\a1c2ae98cd0c88e6d1c11ddceaae13f9\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+443
+444        <meta-data
+444-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\0954a411408fb6743cdeeebf5dc2218c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+445            android:name="com.google.android.gms.version"
+445-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\0954a411408fb6743cdeeebf5dc2218c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+446            android:value="@integer/google_play_services_version" />
+446-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\0954a411408fb6743cdeeebf5dc2218c\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+447
+448        <uses-library
+448-->[androidx.window:window:1.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\44e40c026fdb3afdacbe56b090647524\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+449            android:name="androidx.window.extensions"
+449-->[androidx.window:window:1.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\44e40c026fdb3afdacbe56b090647524\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+450            android:required="false" />
+450-->[androidx.window:window:1.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\44e40c026fdb3afdacbe56b090647524\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+451        <uses-library
+451-->[androidx.window:window:1.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\44e40c026fdb3afdacbe56b090647524\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+452            android:name="androidx.window.sidecar"
+452-->[androidx.window:window:1.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\44e40c026fdb3afdacbe56b090647524\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+453            android:required="false" />
+453-->[androidx.window:window:1.0.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\44e40c026fdb3afdacbe56b090647524\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+454
+455        <receiver
+455-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+456            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+456-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+457            android:directBootAware="false"
+457-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+458            android:enabled="true"
+458-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+459            android:exported="true"
+459-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+460            android:permission="android.permission.DUMP" >
+460-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+461            <intent-filter>
+461-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+462                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+462-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+462-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+463            </intent-filter>
+464            <intent-filter>
+464-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+465                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+465-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+465-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+466            </intent-filter>
+467            <intent-filter>
+467-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+468                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+468-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+468-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+469            </intent-filter>
+470            <intent-filter>
+470-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+471                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+471-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+471-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\fdd3178f9642d4cad6bc6cb4e4c6f10e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+472            </intent-filter>
+473        </receiver>
+474
+475        <service
+475-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f34de64dc8f7e4b778a1d4b578665c0f\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+476            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+476-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f34de64dc8f7e4b778a1d4b578665c0f\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+477            android:exported="false" >
+477-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f34de64dc8f7e4b778a1d4b578665c0f\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+478            <meta-data
+478-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f34de64dc8f7e4b778a1d4b578665c0f\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+479                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+479-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f34de64dc8f7e4b778a1d4b578665c0f\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+480                android:value="cct" />
+480-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\f34de64dc8f7e4b778a1d4b578665c0f\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+481        </service>
+482        <service
+482-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+483            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+483-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+484            android:exported="false"
+484-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+485            android:permission="android.permission.BIND_JOB_SERVICE" >
+485-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+486        </service>
+487
+488        <receiver
+488-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+489            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+489-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+490            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+490-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\c60c4a3874d5fb7405f0c1a134bacae7\transformed\transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+491        <activity
+491-->[com.google.android.play:core-common:2.0.3] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\15fc09754da459ee3e7e8f51c4dc9aca\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+492            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+492-->[com.google.android.play:core-common:2.0.3] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\15fc09754da459ee3e7e8f51c4dc9aca\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+493            android:exported="false"
+493-->[com.google.android.play:core-common:2.0.3] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\15fc09754da459ee3e7e8f51c4dc9aca\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+494            android:stateNotNeeded="true"
+494-->[com.google.android.play:core-common:2.0.3] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\15fc09754da459ee3e7e8f51c4dc9aca\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+495            android:theme="@style/Theme.PlayCore.Transparent" />
+495-->[com.google.android.play:core-common:2.0.3] C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\15fc09754da459ee3e7e8f51c4dc9aca\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+496    </application>
+497
+498</manifest>

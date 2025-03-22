@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "code.name.monkey.retromusic.app-mergeNormalReleaseResources-80:/layout-v31/layout_notification_expanded.xml",
+        "source": "code.name.monkey.retromusic.app-main-83:/layout-v31/layout_notification_expanded.xml"
+    },
+    {
+        "merged": "code.name.monkey.retromusic.app-mergeNormalReleaseResources-80:/layout-v31/layout_notification_collapsed.xml",
+        "source": "code.name.monkey.retromusic.app-main-83:/layout-v31/layout_notification_collapsed.xml"
+    }
+]

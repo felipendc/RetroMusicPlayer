@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "code.name.monkey.retromusic.app-mergeNormalReleaseResources-79:/values-xlarge-v4/values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Felipe Ndc\\Desktop\\RetroMusicPlayer\\app\\src\\main\\res\\values-xlarge\\dimens.xml",
+                    "from": {
+                        "startLines": "4,3,5,2,1",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "167,119,222,73,16",
+                        "endColumns": "54,47,49,45,56",
+                        "endOffsets": "217,162,267,114,68"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "473,528,576,626,672",
+                        "endColumns": "54,47,49,45,56",
+                        "endOffsets": "523,571,621,667,724"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Felipe Ndc\\.gradle\\caches\\8.11.1\\transforms\\50db32036293a101efe0264af4a378e7\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        }
+    ]
+}

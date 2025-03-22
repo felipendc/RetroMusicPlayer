@@ -1,0 +1,34 @@
+<variant
+    name="normalRelease"
+    useSupportLibraryVectorDrawables="true"
+    package="code.name.monkey.retromusic"
+    minSdkVersion="21"
+    targetSdkVersion="35"
+    shrinking="true"
+    mergedManifest="build\intermediates\merged_manifest\normalRelease\processNormalReleaseMainManifest\AndroidManifest.xml"
+    proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.9.0-rc02;proguard-rules.pro"
+    partialResultsDir="build\intermediates\lint_vital_partial_results\normalRelease\lintVitalAnalyzeNormalRelease\out"
+    desugaredMethodsFiles="C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\1ea91c3f8fe813f6f968bc64afae1fb4\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      viewBinding="true"
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src\main\AndroidManifest.xml;src\normal\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\normal\java;src\release\java;src\normalRelease\java;src\main\kotlin;src\normal\kotlin;src\release\kotlin;src\normalRelease\kotlin"
+        resDirectories="src\main\res;src\normal\res;src\release\res;src\normalRelease\res"
+        assetsDirectories="src\main\assets;src\normal\assets;src\release\assets;src\normalRelease\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="build\intermediates\javac\normalRelease\compileNormalReleaseJavaWithJavac\classes;build\tmp\kotlin-classes\normalRelease;build\kotlinToolingMetadata;build\generated\ksp\normalRelease\resources;build\intermediates\compile_and_runtime_not_namespaced_r_class_jar\normalRelease\processNormalReleaseResources\R.jar"
+      type="MAIN"
+      applicationId="code.name.monkey.retromusic"
+      generatedSourceFolders="build\generated\source\navigation-args\normal\release;build\generated\ksp\normalRelease\java;build\generated\ksp\normalRelease\kotlin;build\generated\ap_generated_sources\normalRelease\out;build\generated\source\buildConfig\normal\release;build\generated\data_binding_base_class_source_out\normalRelease\out"
+      generatedResourceFolders="build\generated\res\resValues\normal\release"
+      desugaredMethodsFiles="C:\Users\Felipe Ndc\.gradle\caches\8.11.1\transforms\1ea91c3f8fe813f6f968bc64afae1fb4\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>
